@@ -95,7 +95,7 @@ function MessageForm() {
                         </Form.Group>
                     </Col>
                     <Col md={1}>
-                        <Button variant="primary" type="submit" style={{ width: "100%", backgroundColor: "orange" }} disabled={!user}>
+                        <Button variant="primary" type="submit" style={{ width: "100%", backgroundColor: "#0d6efd" }} disabled={!user}>
                             <i className="fas fa-paper-plane"></i>
                         </Button>
                     </Col>
