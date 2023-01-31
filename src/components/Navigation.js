@@ -41,16 +41,14 @@ function Navigation() {
                                     {user.name}
                                 </>
                             } id="basic-nav-dropdown">
+                                <NavDropdown.Item to="/chat">Let's chat</NavDropdown.Item>
+                                <NavDropdown.Divider />
                                 <NavDropdown.Item>
                                     <Button variant='danger' onClick={handleLogout}>
                                         logout
                                     </Button>
                                 </NavDropdown.Item>
-                                <NavDropdown.Item>
-                                    <LinkContainer to="/chat">
-                                        <Nav.Link>Chat</Nav.Link>
-                                    </LinkContainer>
-                                </NavDropdown.Item>
+
                             </NavDropdown>
                         )}
                     </Nav>
