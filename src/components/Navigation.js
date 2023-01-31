@@ -46,6 +46,11 @@ function Navigation() {
                                         logout
                                     </Button>
                                 </NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <LinkContainer to="/chat">
+                                        <Nav.Link>Chat</Nav.Link>
+                                    </LinkContainer>
+                                </NavDropdown.Item>
                             </NavDropdown>
                         )}
                     </Nav>
