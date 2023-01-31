@@ -6,7 +6,7 @@ const appApi = createApi({
     reducerPath: 'appApi',
     baseQuery: fetchBaseQuery({
         //http://localhost:5001
-        baseUrl: 'https://pwachat.onrender.com:5001'
+        baseUrl: 'https://pwachat-api.onrender.com'
     }),
     endpoints: (builder) => ({
         // user create
