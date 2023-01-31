@@ -27,7 +27,7 @@ function Sidebar() {
 
 
     function getRooms() {
-        fetch('http://localhost:5001/rooms')
+        fetch('https://pwachat-api.onrender.com/rooms')
             .then((res) => res.json())
             .then((data) => setRooms(data));
     }
