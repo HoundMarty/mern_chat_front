@@ -13,9 +13,9 @@ function Sidebar() {
 
     useEffect(() => {
         if (user) {
-            setCurrentRoom("general");
+            setCurrentRoom("General");
             getRooms();
-            socket.emit("join-room", "general");
+            socket.emit("join-room", "General");
             socket.emit("new-user");
         }
     }, [])
