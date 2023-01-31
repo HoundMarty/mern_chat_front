@@ -70,7 +70,7 @@ function Sidebar() {
         }
     }
 
-    function handlePrivateMsg(member) {
+    function handlePrivateMemberMsg(member) {
         setPrivateMemberMsg(member);
         const roomId = orderIds(user._id, member._id);
         joinRoom(roomId, false);
