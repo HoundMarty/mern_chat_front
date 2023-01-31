@@ -43,7 +43,7 @@ function Navigation() {
                             } id="basic-nav-dropdown">
                                 <NavDropdown.Item>
                                     <LinkContainer to="/chat">
-                                        Let's chat
+                                        <Nav.Link>To Chat</Nav.Link>
                                     </LinkContainer>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
