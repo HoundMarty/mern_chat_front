@@ -1,6 +1,6 @@
 import "./App.css";
 import Navigation from "./components/Navigation";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter,HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Singup from "./pages/Singup";
 import Login from "./pages/Login";
@@ -20,7 +20,7 @@ function App() {
   const user = useSelector((state) => state.user);
   return (
     <AppContext.Provider value={{ socket, currentRoom, setCurrentRoom, members, setMembers, messages, setMessages, privateMemberMsg, setPrivateMemberMsg, rooms, setRooms, newMessages, setNewMessages }}>
-      <BrowserRouter>
+      <HashRouter>
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -32,7 +32,7 @@ function App() {
           )}
           <Route path="/chat" element={<Chat />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </AppContext.Provider>
   );
 }
